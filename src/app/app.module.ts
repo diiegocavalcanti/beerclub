@@ -14,6 +14,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
+import { DetalhesPage } from '../pages/detalhes/detalhes';
 
 
 
@@ -23,7 +24,8 @@ import { environment } from '../environments/environment';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    DetalhesPage
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ import { environment } from '../environments/environment';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    DetalhesPage
   ],
   providers: [
     StatusBar,
