@@ -1,11 +1,11 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title><img src="./assets/imgs/LOGO.svg" alt=""></ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+<ion-content>
+    <ion-searchbar></ion-searchbar>
   <ion-card *ngFor="let item of items">
     <img src="https://placeimg.com/600/600/nature">
     <ion-fab right top>
@@ -27,8 +27,8 @@
     </ion-item>
 
     <ion-item>
-        <button (click)="viewDetails(1)" ion-button outline>Informações</button>
-      <button ion-button icon-left clear item-end>
+        <button (click)="viewDetails(1)" ion-button outline round>Informações</button>
+      <button ion-button icon-left clear item-end round>
         <ion-icon name="ios-star-outline"></ion-icon>
         Favoritar
       </button>

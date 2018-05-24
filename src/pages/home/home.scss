@@ -19,12 +19,16 @@ page-home {
     width: 100%;
     color: #fff;
   }
-  .card-ios {
+  .card-ios,
+  .card-md {
     margin: 15px;
     border-radius: 25px;
     -webkit-box-shadow: 0px 0px 50px -4px rgba(0, 0, 0, 1);
     -moz-box-shadow: 0px 0px 50px -4px rgba(0, 0, 0, 1);
     box-shadow: 0px 0px 50px -4px rgba(0, 0, 0, 1);
+  }
+  .card-md h2 {
+    color: #FEC841;
   }
 }
 
