@@ -15,6 +15,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
 import { DetalhesPage } from '../pages/detalhes/detalhes';
+import { ProvidersFirebaseProvider } from '../providers/providers-firebase/providers-firebase';
 
 
 
@@ -45,7 +46,8 @@ import { DetalhesPage } from '../pages/detalhes/detalhes';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ProvidersFirebaseProvider
   ]
 })
 export class AppModule {}
